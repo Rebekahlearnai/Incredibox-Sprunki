@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredibox Sprunki - Free Online Music Game | Play Now</title>
+    <meta name="description" content="Create your own unique beats with Incredibox Sprunki, the addictive music game that lets you mix and match sounds to create awesome tracks.">
+    <link rel="canonical" href="https://incrediboxsprunkionline.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            indigo: '#5856D6',
+                            purple: '#AF52DE',
+                            pink: '#FF2D55',
+                            red: '#FF3B30',
+                            orange: '#FF9500',
+                            yellow: '#FFCC00',
+                            green: '#34C759',
+                            teal: '#5AC8FA',
+                            gray: '#8E8E93',
+                            lightGray: '#E5E5EA',
+                            darkGray: '#1C1C1E',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        .game-container {
+            aspect-ratio: 16/9;
+            max-height: 80vh;
+        }
+        .game-frame {
+            width: 100%;
+            height: 100%;
+        }
+        .character-card {
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .character-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-color: #f5f5f7;
+        }
+        .character-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .character-image-container {
+            height: 120px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-apple-darkGray min-h-screen">
+    <header class="bg-gradient-to-r from-apple-blue to-apple-purple py-8 px-4 md:px-8 shadow-lg">
+        <div class="container mx-auto">
+            <h1 class="text-3xl md:text-5xl font-bold text-white text-center mb-4">Incredibox Sprunki</h1>
+            <p class="text-xl text-white text-center max-w-3xl mx-auto">Create amazing music with just a few clicks in this addictive rhythm game!</p>
+        </div>
+    </header>
 
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <div class="game-container bg-black rounded-xl overflow-hidden shadow-xl mx-auto">
+                <iframe allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share" id="game_drop" class="game-frame" allowtransparency="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" frameborder="0" allowfullscreen="true" scrolling="no" src="https://html-classic.itch.zone/html/11407110/index.html?v=1730332583"></iframe>
+            </div>
+        </section>
+
+        <section class="mb-12 grid md:grid-cols-2 gap-8">
+            <div class="bg-apple-lightGray dark:bg-gray-800 p-6 rounded-xl shadow-md">
+                <h2 class="text-2xl font-bold text-apple-blue dark:text-apple-teal mb-4">How to Play</h2>
+                <p class="mb-3">Incredibox Sprunki is an intuitive music creation game where you can mix different sounds to create your own unique beats.</p>
+                <p class="mb-3">Simply drag and drop characters onto the stage, each representing different sounds, and watch as they combine to create amazing music.</p>
+                <p>Experiment with different combinations to unlock special bonuses and discover new musical possibilities!</p>
+            </div>
+
+            <div class="bg-apple-lightGray dark:bg-gray-800 p-6 rounded-xl shadow-md">
+                <h2 class="text-2xl font-bold text-apple-purple dark:text-apple-purple mb-4">Features</h2>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Intuitive drag-and-drop interface</li>
+                    <li>Multiple sound characters to mix and match</li>
+                    <li>Create, save, and share your compositions</li>
+                    <li>Unlock special bonuses and animations</li>
+                    <li>Perfect for music lovers of all ages</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-apple-green dark:text-apple-green mb-6 text-center">About Incredibox Sprunki</h2>
+            <div class="bg-apple-lightGray dark:bg-gray-800 p-6 rounded-xl shadow-md">
+                <p class="mb-4">Incredibox Sprunki is the latest version of the award-winning musical game that has captivated millions of players worldwide. Created by a team of passionate musicians and designers, Incredibox transforms anyone into a music producer, regardless of their musical background.</p>
+                <p class="mb-4">The Sprunki edition introduces new sounds, characters, and interactive elements that take the music creation experience to a whole new level. With its intuitive interface and endless creative possibilities, Incredibox Sprunki is perfect for music enthusiasts, casual gamers, and anyone who enjoys creating something unique.</p>
+                <p>Whether you're looking to relax, express yourself musically, or just have fun, Incredibox Sprunki offers an immersive experience that combines gaming with musical creativity.</p>
+            </div>
+        </section>
+
+        <!-- 修改后的角色介绍部分 - 每个卡片内部为左右排版，保持3列布局 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-apple-pink dark:text-apple-pink mb-6 text-center">Meet The Sprunki Characters</h2>
+            <p class="text-center mb-8 max-w-3xl mx-auto">Discover the unique characters that make up the Sprunki universe. Each brings their own style and sound to create an incredible musical experience!</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Drums Character -->
+                <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
+                    <div class="flex flex-row h-full">
+                        <div class="w-1/3 h-full">
+                            <img src="https://via.placeholder.com/400x400" alt="Drums Character" class="character-img h-full">
+                        </div>
+                        <div class="p-4 w-2/3">
+                            <h3 class="text-xl font-bold text-apple-red mb-2">Drums</h3>
+                            <p class="text-sm mb-2">Category: <span class="font-medium">Rhythm Section</span></p>
+                            <p class="text-sm">The foundation of any great track, the Drums character provides the essential beat that drives your composition.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Effects Character -->
+                <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
+                    <div class="flex flex-row h-full">
+                        <div class="w-1/3 h-full">
+                            <img src="https://via.placeholder.com/400x400" alt="Effects Character" class="character-img h-full">
+                        </div>
+                        <div class="p-4 w-2/3">
+                            <h3 class="text-xl font-bold text-apple-blue mb-2">Effects</h3>
+                            <p class="text-sm mb-2">Category: <span class="font-medium">Sound Enhancement</span></p>
+                            <p class="text-sm">Add texture and depth to your mix with the Effects character, from electronic whooshes to glitches and scratches.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Melody Character -->
+                <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
+                    <div class="flex flex-row h-full">
+                        <div class="w-1/3 h-full">
+                            <img src="https://via.placeholder.com/400x400" alt="Melody Character" class="character-img h-full">
+                        </div>
+                        <div class="p-4 w-2/3">
+                            <h3 class="text-xl font-bold text-apple-green mb-2">Melody</h3>
+                            <p class="text-sm mb-2">Category: <span class="font-medium">Harmonic Elements</span></p>
+                            <p class="text-sm">The heart of any musical piece, providing tunes that range from simple hooks to complex melodic patterns.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Voice Character -->
+                <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
+                    <div class="flex flex-row h-full">
+                        <div class="w-1/3 h-full">
+                            <img src="https://via.placeholder.com/400x400" alt="Voice Character" class="character-img h-full">
+                        </div>
+                        <div class="p-4 w-2/3">
+                            <h3 class="text-xl font-bold text-apple-purple mb-2">Voice</h3>
+                            <p class="text-sm mb-2">Category: <span class="font-medium">Vocal Elements</span></p>
+                            <p class="text-sm">The human element in your composition, adding vocal samples from beatboxing to sung phrases.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bass Character -->
+                <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
+                    <div class="flex flex-row h-full">
+                        <div class="w-1/3 h-full">
+                            <img src="https://via.placeholder.com/400x400" alt="Bass Character" class="character-img h-full">
+                        </div>
+                        <div class="p-4 w-2/3">
+                            <h3 class="text-xl font-bold text-apple-indigo mb-2">Bass</h3>
+                            <p class="text-sm mb-2">Category: <span class="font-medium">Low-End Frequencies</span></p>
+                            <p class="text-sm">Providing crucial low-end frequencies that give weight and depth to your mix and create the groove.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bonus Character -->
+                <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
+                    <div class="flex flex-row h-full">
+                        <div class="w-1/3 h-full">
+                            <img src="https://via.placeholder.com/400x400" alt="Bonus Character" class="character-img h-full">
+                        </div>
+                        <div class="p-4 w-2/3">
+                            <h3 class="text-xl font-bold text-apple-yellow mb-2">Bonus</h3>
+                            <p class="text-sm mb-2">Category: <span class="font-medium">Special Features</span></p>
+                            <p class="text-sm">Unlock these by finding specific combinations of characters to trigger unique animations and audio elements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-apple-lightGray dark:bg-gray-800 p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold text-apple-orange dark:text-apple-orange mb-3">The Power of Combinations</h3>
+                <p class="mb-4">In Incredibox Sprunki, the true magic happens when you combine different character types. Start with a rhythm foundation using Drums and Bass, add melodic elements, then layer in Voices and Effects for richness and depth.</p>
+                <p class="mb-4">Certain combinations will unlock the special Bonus characters which create unique animations and musical flourishes. Experiment with different arrangements to discover all the hidden secrets in the Sprunki universe!</p>
+                <p>Each character has multiple sound variations to choose from, allowing for countless unique compositions. Mix and match to create your own signature sound and share your masterpiece with friends!</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold text-apple-orange dark:text-apple-orange mb-6 text-center">Tips for Better Compositions</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-apple-lightGray dark:bg-gray-800 p-5 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold text-apple-red dark:text-apple-red mb-3">Balance Your Sounds</h3>
+                    <p>Mix different types of sounds (beats, melodies, vocals) for a well-rounded composition.</p>
+                </div>
+                <div class="bg-apple-lightGray dark:bg-gray-800 p-5 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold text-apple-yellow dark:text-apple-yellow mb-3">Experiment Freely</h3>
+                    <p>Don't be afraid to try unusual combinations - you might discover something amazing!</p>
+                </div>
+                <div class="bg-apple-lightGray dark:bg-gray-800 p-5 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold text-apple-teal dark:text-apple-teal mb-3">Unlock Bonuses</h3>
+                    <p>Certain character combinations will trigger special animations and bonus tracks.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-darkGray text-white py-8 px-4 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="mb-2">&copy; 2025 Incredibox Sprunki Online. All rights reserved.</p>
+            <p class="text-sm text-apple-gray">Incredibox is a registered trademark. This is a fan site and is not affiliated with the official Incredibox creators.</p>
+        </div>
+    </footer>
+</body>
+</html>
