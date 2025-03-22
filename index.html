@@ -45,26 +45,10 @@
         }
         .character-card {
             transition: all 0.3s ease;
-            height: 100%;
         }
         .character-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .character-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            background-color: #f5f5f7;
-        }
-        .character-content {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        .character-image-container {
-            height: 120px;
-            overflow: hidden;
         }
     </style>
 </head>
@@ -112,102 +96,89 @@
             </div>
         </section>
 
-        <!-- 修改后的角色介绍部分 - 每个卡片内部为左右排版，保持3列布局 -->
+        <!-- New Character Introduction Section -->
         <section class="mb-12">
             <h2 class="text-2xl font-bold text-apple-pink dark:text-apple-pink mb-6 text-center">Meet The Sprunki Characters</h2>
-            <p class="text-center mb-8 max-w-3xl mx-auto">Discover the unique characters that make up the Sprunki universe. Each brings their own style and sound to create an incredible musical experience!</p>
+            <p class="text-center mb-8 max-w-3xl mx-auto">Each character in Incredibox Sprunki brings their own unique sound to your musical creation. Get to know their personalities and what they contribute to your mix!</p>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Drums Character -->
+                <!-- Beats Character -->
                 <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
-                    <div class="flex flex-row h-full">
-                        <div class="w-1/3 h-full">
-                            <img src="https://via.placeholder.com/400x400" alt="Drums Character" class="character-img h-full">
-                        </div>
-                        <div class="p-4 w-2/3">
-                            <h3 class="text-xl font-bold text-apple-red mb-2">Drums</h3>
-                            <p class="text-sm mb-2">Category: <span class="font-medium">Rhythm Section</span></p>
-                            <p class="text-sm">The foundation of any great track, the Drums character provides the essential beat that drives your composition.</p>
-                        </div>
+                    <div class="h-32 bg-gradient-to-r from-apple-red to-apple-orange flex items-center justify-center">
+                        <span class="text-5xl">🥁</span>
                     </div>
-                </div>
-                
-                <!-- Effects Character -->
-                <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
-                    <div class="flex flex-row h-full">
-                        <div class="w-1/3 h-full">
-                            <img src="https://via.placeholder.com/400x400" alt="Effects Character" class="character-img h-full">
-                        </div>
-                        <div class="p-4 w-2/3">
-                            <h3 class="text-xl font-bold text-apple-blue mb-2">Effects</h3>
-                            <p class="text-sm mb-2">Category: <span class="font-medium">Sound Enhancement</span></p>
-                            <p class="text-sm">Add texture and depth to your mix with the Effects character, from electronic whooshes to glitches and scratches.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Melody Character -->
-                <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
-                    <div class="flex flex-row h-full">
-                        <div class="w-1/3 h-full">
-                            <img src="https://via.placeholder.com/400x400" alt="Melody Character" class="character-img h-full">
-                        </div>
-                        <div class="p-4 w-2/3">
-                            <h3 class="text-xl font-bold text-apple-green mb-2">Melody</h3>
-                            <p class="text-sm mb-2">Category: <span class="font-medium">Harmonic Elements</span></p>
-                            <p class="text-sm">The heart of any musical piece, providing tunes that range from simple hooks to complex melodic patterns.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Voice Character -->
-                <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
-                    <div class="flex flex-row h-full">
-                        <div class="w-1/3 h-full">
-                            <img src="https://via.placeholder.com/400x400" alt="Voice Character" class="character-img h-full">
-                        </div>
-                        <div class="p-4 w-2/3">
-                            <h3 class="text-xl font-bold text-apple-purple mb-2">Voice</h3>
-                            <p class="text-sm mb-2">Category: <span class="font-medium">Vocal Elements</span></p>
-                            <p class="text-sm">The human element in your composition, adding vocal samples from beatboxing to sung phrases.</p>
-                        </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-apple-red mb-2">Beatbox Bruno</h3>
+                        <p class="text-sm mb-3">Sound Type: <span class="font-medium">Beats & Percussion</span></p>
+                        <p>Bruno brings the rhythm foundation to your mix with his impressive beatboxing skills. His sounds form the backbone of any great composition.</p>
                     </div>
                 </div>
                 
                 <!-- Bass Character -->
                 <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
-                    <div class="flex flex-row h-full">
-                        <div class="w-1/3 h-full">
-                            <img src="https://via.placeholder.com/400x400" alt="Bass Character" class="character-img h-full">
-                        </div>
-                        <div class="p-4 w-2/3">
-                            <h3 class="text-xl font-bold text-apple-indigo mb-2">Bass</h3>
-                            <p class="text-sm mb-2">Category: <span class="font-medium">Low-End Frequencies</span></p>
-                            <p class="text-sm">Providing crucial low-end frequencies that give weight and depth to your mix and create the groove.</p>
-                        </div>
+                    <div class="h-32 bg-gradient-to-r from-apple-purple to-apple-indigo flex items-center justify-center">
+                        <span class="text-5xl">🎸</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-apple-purple mb-2">Bass Master Benny</h3>
+                        <p class="text-sm mb-3">Sound Type: <span class="font-medium">Bass Lines</span></p>
+                        <p>Benny creates deep, resonating bass lines that give depth to your tracks. His groovy contributions will get everyone moving to the beat.</p>
                     </div>
                 </div>
                 
-                <!-- Bonus Character -->
+                <!-- Melody Character -->
                 <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
-                    <div class="flex flex-row h-full">
-                        <div class="w-1/3 h-full">
-                            <img src="https://via.placeholder.com/400x400" alt="Bonus Character" class="character-img h-full">
-                        </div>
-                        <div class="p-4 w-2/3">
-                            <h3 class="text-xl font-bold text-apple-yellow mb-2">Bonus</h3>
-                            <p class="text-sm mb-2">Category: <span class="font-medium">Special Features</span></p>
-                            <p class="text-sm">Unlock these by finding specific combinations of characters to trigger unique animations and audio elements.</p>
-                        </div>
+                    <div class="h-32 bg-gradient-to-r from-apple-green to-apple-teal flex items-center justify-center">
+                        <span class="text-5xl">🎹</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-apple-green mb-2">Melody Mia</h3>
+                        <p class="text-sm mb-3">Sound Type: <span class="font-medium">Melodies & Harmonies</span></p>
+                        <p>Mia brings beautiful melodies that float over the rhythm section. Her musical phrases add emotion and character to your compositions.</p>
+                    </div>
+                </div>
+                
+                <!-- Effects Character -->
+                <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
+                    <div class="h-32 bg-gradient-to-r from-apple-blue to-apple-teal flex items-center justify-center">
+                        <span class="text-5xl">✨</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-apple-blue mb-2">Effects Eddie</h3>
+                        <p class="text-sm mb-3">Sound Type: <span class="font-medium">Sound Effects & Samples</span></p>
+                        <p>Eddie is all about those unique sound effects that make your mix stand out. From scratches to digital bleeps, he adds that special touch.</p>
+                    </div>
+                </div>
+                
+                <!-- Vocals Character -->
+                <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
+                    <div class="h-32 bg-gradient-to-r from-apple-yellow to-apple-orange flex items-center justify-center">
+                        <span class="text-5xl">🎤</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-apple-yellow mb-2">Vocal Vicky</h3>
+                        <p class="text-sm mb-3">Sound Type: <span class="font-medium">Vocal Samples & Hooks</span></p>
+                        <p>Vicky provides catchy vocal hooks and phrases that become the memorable centerpiece of your tracks. Her voice will get stuck in everyone's head!</p>
+                    </div>
+                </div>
+                
+                <!-- Special Character -->
+                <div class="character-card bg-apple-lightGray dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
+                    <div class="h-32 bg-gradient-to-r from-apple-pink to-apple-purple flex items-center justify-center">
+                        <span class="text-5xl">⭐</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-apple-pink mb-2">Mystery Max</h3>
+                        <p class="text-sm mb-3">Sound Type: <span class="font-medium">Bonus Elements</span></p>
+                        <p>Max is the mysterious character who unlocks special bonuses and visual effects when combined with the right mix of other characters. Try to discover his secrets!</p>
                     </div>
                 </div>
             </div>
             
             <div class="mt-8 bg-apple-lightGray dark:bg-gray-800 p-6 rounded-xl shadow-md">
-                <h3 class="text-xl font-bold text-apple-orange dark:text-apple-orange mb-3">The Power of Combinations</h3>
-                <p class="mb-4">In Incredibox Sprunki, the true magic happens when you combine different character types. Start with a rhythm foundation using Drums and Bass, add melodic elements, then layer in Voices and Effects for richness and depth.</p>
-                <p class="mb-4">Certain combinations will unlock the special Bonus characters which create unique animations and musical flourishes. Experiment with different arrangements to discover all the hidden secrets in the Sprunki universe!</p>
-                <p>Each character has multiple sound variations to choose from, allowing for countless unique compositions. Mix and match to create your own signature sound and share your masterpiece with friends!</p>
+                <h3 class="text-xl font-bold text-apple-blue dark:text-apple-blue mb-3">Character Combinations</h3>
+                <p class="mb-4">The true magic of Incredibox Sprunki happens when you combine different characters together. Each character interacts with others in unique ways, creating harmonious musical layers and sometimes unlocking special animations!</p>
+                <p>Try combining Beatbox Bruno with Bass Master Benny for a solid rhythm section, then add Melody Mia for some beautiful harmonies. Complete your mix with Effects Eddie and Vocal Vicky for a full, rich sound. And don't forget to experiment with Mystery Max to discover hidden surprises!</p>
             </div>
         </section>
 
